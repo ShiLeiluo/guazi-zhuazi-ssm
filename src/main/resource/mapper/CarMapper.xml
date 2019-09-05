@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.CarMapper">
+    <select id="getCars" resultType="com.entity.Car">
+    select *  from Car
+        <where>
+            <if test="cityname != null">
+                cityname = #{cityname}
+            </if>
+        </where>
+    </select>
+    <select id="getBuyCars" resultType="com.entity.Car">
+        select *  from Car where status='已核实'
+    </select>
+    <select id="detail" resultType="com.entity.Car">
+        select *  from Car
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+        </where>
+    </select>
+    <select id="carinfo" resultType="com.entity.CarInfo">
+        select *  from carinfo where id=#{id}
+    </select>
+    <select id="car_engine_info" resultType="com.entity.Car_engine_info">
+        select *  from Car_engine_info where id=#{id}
+    </select>
+    <select id="car_chassis_brake_info" resultType="com.entity.Car_chassis_brake_info">
+        select *  from car_chassis_brake_info where id=#{id}
+    </select>
+    <select id="car_safety_info" resultType="com.entity.Car_safety_info">
+        select *  from car_safety_info where id=#{id}
+    </select>
+    <select id="car_external_info" resultType="com.entity.Car_external_info">
+        select *  from car_external_info where id=#{id}
+    </select>
+    <select id="car_internal_info" resultType="com.entity.Car_internal_info">
+        select *  from car_internal_info where id=#{id}
+    </select>
+    <insert id="addCar" parameterType="com.entity.Car">
+        insert into car(name,cartime,nowprice,orprice,cityname,phone,age,mile,demage,cspeed) values(#{name},#{cartime},#{nowprice},#{orprice},#{cityname},#{phone},#{age},#{mile},#{demage},#{cspeed})
+    </insert>
+    <select id="getId" resultType="com.entity.Car">
+        SELECT * FROM car ORDER BY id DESC LIMIT 1
+    </select>
+    <update id="insertPic" parameterType="com.entity.Pic">
+        update car set pic=#{pic} where id=#{id}
+    </update>
+    <select id="getUncheckSell" resultType="com.entity.Car">
+        select *  from Car where status='未核实'
+    </select>
+    <select id="getCheckedSell" resultType="com.entity.Car">
+        select *  from Car where status='已核实'
+    </select>
+</mapper>

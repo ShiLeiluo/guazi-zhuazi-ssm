@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.TitleMapper">
+    <select id="getTitleByAdcode" resultType="com.entity.Title">
+    select *  from title where adcode=#{adcode}
+    </select>
+    <select id="getTitleByCityname" resultType="com.entity.Title">
+    select *  from title where cityname=#{cityname}
+    </select>
+</mapper>

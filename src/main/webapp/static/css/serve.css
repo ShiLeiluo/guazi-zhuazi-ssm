@@ -1,0 +1,477 @@
+/*主体宽度*/
+.nav-container,.dealFlow,.detection-cont,.detection-bottom,.accompany,.subject{
+    width:1200px;
+    margin:0 auto;
+}
+/* 头部 */
+header{
+    height:410px;
+}
+/* 导航栏 */
+nav{
+    height:64px;
+    background-color:#fcfcfc;
+}
+.nav-container{
+    height:65px;
+}
+/*logo图片*/
+nav .nav-left>span{
+	width:64px;
+	height:64px;
+	display:inline-block;
+}
+nav .nav-left>span>a>img{
+	width:64px;
+	height:64px;
+}
+nav .nav-left>a>img{
+	width:9px;
+	height:4px;
+	position:relative;
+	top:-2px;
+	left:-3px;	
+}
+nav .nav-left .city{
+	margin-top:30px;
+	display:block;
+	margin-left:40px;
+	font-size:13px;
+	color:#2c2c2c;
+}
+/* 导航栏右边内容 */
+.nav-right li{
+	float:left;
+	margin:30px 27px;
+	font-size:14px;
+}
+.nav-right ul li:nth-child(4){
+	border-bottom:2px solid #22ac38;
+	padding-bottom:10px;
+}
+.nav-right ul li img{
+	width:14px;
+	height:14px;
+	position:relative;
+	top:1px;
+	left:3px;	
+}
+.nav-right li a{
+	color:#333333;
+}
+.nav-right li a:hover{
+	color:#22ac38;
+}
+.nav-right ul li:nth-child(7){
+	border-right:1px solid #8c898c;
+	padding-right:20px;
+	margin-left:3px;
+	margin-top:29px;
+}
+.nav-right ul li:last-child{
+	font-size:24px;
+	margin-left:0px;
+	font-weight:bold;
+	color:#22ac38;
+	line-height:18px;
+}
+/*banner广告*/
+.banner{
+	height:600px;
+	background:url(../img/banbg362eab601deddab5efe06910b3e0e9e3.jpg);
+}
+.banner-top{
+	height:150px;
+	width:830px;
+	margin:0 auto;
+	margin-top:0px;
+	padding-top:70px;
+}
+.banner-top>img{
+	float:left;
+	border-radius:15px;
+	margin-left:10px;
+}
+.banner-top>h1{
+	float:left;
+	font-size:52px;
+	color:#FFFFFF;
+	line-height:130px;
+	margin-left:35px;
+	font-weight:600;
+}
+.banner-center{
+	height:70px;
+	width:1150px;
+	margin:0 auto;
+	margin-top:60px;
+}
+.banner-center h2{
+	font-size:40px;
+	color:#FFFFFF;
+}
+.banner-center h2 i{
+	font-style:normal;
+	font-size:20px;
+	position:relative;
+	top:-5px;
+}
+.banner-bottom{
+	height:40px;
+	width:370px;
+	border:2px solid #FFFFFF;
+	border-radius:40px;
+	margin:0 auto;
+	margin-top:65px;
+}
+.banner-bottom>a{
+	color:#FFFFFF;
+	font-size:24px;
+	line-height:40px;
+	margin-left:25px;
+}
+/*主体部分*/
+section{
+	height:3580px;
+	margin-top:257px;
+}
+/*交易流程*/
+section .dealFlow{
+	height:600px;
+}
+section .dealFlow>h1{
+	font-size:52px;
+	color:#2caa3f;
+	text-align:center;
+	font-weight:600;
+	margin-top:40px;
+}
+section .dealFlow>img{
+	margin-top:40px;
+	margin-left:220px;
+}
+/*检测*/
+section .detection{
+	height:980px;
+	background-color:#f9f9f9;
+	padding-top:40px;
+}
+section .detection .detection-cont{
+	height:1000px;
+}
+section h1{
+	font-size:52px;
+	color:#2caa3f;
+	text-align:center;
+	font-weight:600;
+}
+section .detection .detection-top ul{
+	width:880px;
+	height:120px;
+	margin-left:150px;
+	margin-top:60px;
+}
+section .detection .detection-top li{
+	float:left;
+	width:250px;
+	height:100px;
+	text-align: center;
+	margin-right:60px;
+}
+section .detection .detection-top li:last-child{
+	margin-right:0px;
+}
+.detection .detection-top li h4{
+	color:#22ac38;
+	font-size:30px;
+}
+.detection .detection-top li p{
+	font-size:20px;
+	color:#22ac38;
+	margin-top:5px;
+}
+.detection .detection-top button{
+	height:32px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #22ac38;
+    border-radius: 5px;
+    padding: 0 10px;
+    border:none;
+    margin-left:513px;
+    margin-top:10px;
+}
+/*轮播图*/
+.detection .detection-center{
+	width:800px;
+	height:420px;
+	border:1px solid #f9f9f9;
+	margin:0 auto;
+	margin-top:40px;
+	background:url(../img/car-a1.eb7403d1e185e057708fe29a1088e30e.png) no-repeat;
+	animation:scroll 6s linear infinite; 
+}
+@keyframes scroll{
+	0%,30%{
+		background:url(../img/car-a1.eb7403d1e185e057708fe29a1088e30e.png) no-repeat ;
+		background-size:100%;
+	}
+	30%,35%{
+		background:url(../img/car-a1.eb7403d1e185e057708fe29a1088e30e.png) no-repeat;
+		background-size:100%;
+	}
+	35%,65%{
+		background:url(../img/car-a2.14b63b78719731035ff74c7ec5b824bc.png) no-repeat;
+		background-size:100%;
+	}
+	65%,70%{
+		background:url(../img/car-a2.14b63b78719731035ff74c7ec5b824bc.png) no-repeat;
+		background-size:100%;
+	}
+	70%,95%{
+		background:url(../img/car-a3.9439f0b2ad1f7e1262e5edabc1c24544.png) no-repeat;
+		background-size:100%;
+	
+	}
+	95%,100%{
+		background:url(../img/car-a3.9439f0b2ad1f7e1262e5edabc1c24544.png) no-repeat;
+		background-size:100%;
+	
+	}
+}
+.detection-center ul{
+	width:90px;
+	height:15px;
+	margin:0 auto;
+	margin-top:400px;
+}
+.detection-center ul a li{
+	width:10px;
+	height:10px;
+	float:left;
+	border-radius:50%;
+	background-color:#12af2e;
+	margin-left:30px;
+}
+.detection-center ul .yuan{
+	background-color:#dddddd;
+	margin-left:0px;
+}
+.detection-bottom{
+	height:200px;
+	margin-top:20px;
+}
+.detection-bottom .exclude-left,.exclude-right{
+	width:540px;
+	height:175px;
+	float:left;
+	margin-left:20px;
+}
+.detection-bottom .exclude-right{
+	margin-left:100px;
+}
+.detection-bottom button{
+	height:32px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #22ac38;
+    border-radius: 5px;
+    padding: 0 10px;
+    border:none;
+    margin-top:5px;
+    margin-left:30px;
+}
+.detection-bottom p{
+	color: #26b877;
+    position: relative;
+    font-size: 14px;
+    padding: 8px 0 5px;
+}
+.detection-bottom p:before{
+	content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    font-size:24px;
+}
+.detection-bottom ul{
+	float:left;
+}
+/*陪同交易*/
+.accompany{
+	height:350px;
+	padding-top:40px;
+}
+.accompany ul li{
+	float:left;
+	text-align: left;
+    padding-left:110px;
+    color: #22ac38;
+    font-size: 20px;
+    margin-top:40px;
+    margin-bottom:10px;
+}
+.accompany img{
+	margin-left:90px;
+}
+/*退换*/
+.exchange{
+	background-color:#f9f9f9;
+	height:425px;
+}
+.exchange-cont{
+	width:580px;
+	height:365px;
+	margin:0 auto;
+	padding-top:30px;
+}
+.exchange-cont li{
+	width:260px;
+	height:235px;
+	float:left;
+	margin-left:25px;
+	margin-top:20px;
+	text-align: center;
+}
+.exchange-cont li h4{
+    color: #22ac38;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.exchange-cont li p{
+	color: #666;
+    font-size: 16px;
+    padding: 10px 0;
+}
+/*常见问题*/
+.issue{
+	width:970px;
+	height:1000px;
+	margin:0 auto;
+	padding-top:40px;
+}.issue ul{
+	margin-top:10px;
+}
+.issue li{
+	width:480px;
+	float:left;
+	margin-top:30px;
+}
+.issue-img{
+	width:63px;
+	height:65px;
+	background:url(../img/guarantee_03.png)no-repeat;
+}
+.issue-img h3{
+	text-align: center;
+    line-height: 59px;
+    color: #2caa3f;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+.issue h4{
+    color: #22ac38;
+    font-size: 19px;	
+}
+.issue p{
+	color: #666;
+	line-height: 24px;
+}
+/*底部部分*/
+.subject{
+	height:465px;
+}
+.subject .top{
+	height:200px;
+}
+.subject .top .left{
+	width:800px;
+	height:200px;
+}
+.subject .top .left .logo{
+	width:100px;
+	height:90px;
+	margin-top:50px;
+	margin-left:40px;
+}
+.subject .top .left .phone{
+	margin-top:50px;
+	margin-left:20px;
+}
+.subject .top .left p{
+	color:#b8b8b8;
+	font-size:14px;
+	line-height:20px;	
+}
+.subject .top .right{
+	width:390px;
+	height:200px;
+}
+.subject .top .left .lf img{
+	width:85px;
+	height:85px;
+	margin-top:50px;
+}
+.subject .top .right ul li{
+	float:left;
+	margin-left:8px;
+	margin-top:50px;
+	margin-bottom:15px;
+}
+.subject .top .right ul li:first-child{
+	margin-left:0px;
+}
+.subject .top .right ul li a{
+	color:#b8b8b8;
+	font-size:14px;
+}
+.subject .top .right ul li a:hover{
+	text-decoration:underline;
+}
+.subject .top .right p{
+	color:#b8b8b8;
+	font-size:12px;
+	line-height:20px;
+}
+.subject .top .right p a{
+	color:#939393;
+}
+.subject .top .right p img{
+	position:relative;
+	top:5px;
+}
+.subject .bottom{
+	height:240px;
+}
+.subject .bottom ul{
+	margin-bottom:10px;
+}
+.subject .bottom h4{
+	float:left;
+	color:#666666;
+	font-size:15px;
+	font-weight:normal;
+}
+.subject .bottom li{
+	float:left;
+	margin-left:20px;
+}
+.subject .bottom li a{
+	color:#666666;
+	font-size:12px;
+}
+.subject .bottom li a:hover{
+	text-decoration:underline;
+}
+.subject .bottom p{
+	color:#666666;
+	font-size:12px;
+	text-align: center;
+	margin-top:30px;
+	margin-bottom:30px;
+}

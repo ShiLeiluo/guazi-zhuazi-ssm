@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.LogicMapper">
+    <insert id="addOrder" parameterType="com.entity.Order">
+    insert into car_order(orderid,orderedid,status) values(#{orderid},#{orderedid},#{status})
+    </insert>
+    <select id="checkOrder" resultType="com.entity.Order">
+        select *  from car_order where orderid=#{orderid} and orderedid=#{orderedid}
+    </select>
+    <insert id="addCollect" parameterType="com.entity.Collect">
+    insert into car_collect(collectid,collectedid) values(#{collectid},#{collectedid})
+    </insert>
+    <select id="checkCollect" resultType="com.entity.Collect">
+        select *  from car_collect where collectid=#{collectid} and collectedid=#{collectedid}
+    </select>
+</mapper>

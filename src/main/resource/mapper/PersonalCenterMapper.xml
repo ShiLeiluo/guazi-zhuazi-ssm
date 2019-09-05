@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.PersonalCenterMapper">
+    <update id="updateUser" parameterType="com.entity.User">
+         update user set username=#{username},realname=#{realname},sex=#{sex},age=#{age},phonenumber=#{phonenumber},email=#{email} where id=#{id}
+    </update>
+    <select id="undoneorder" resultType="com.entity.UndoneOrder">
+        select * from car_order,car where orderid=#{userid} and id=#{userid} and car_order.status='未交易'
+    </select>
+    <select id="historyOrder" resultType="com.entity.UndoneOrder">
+        select * from car_order,car where orderid=#{userid} and id=#{userid} and car_order.status='已交易'
+    </select>
+    <select id="confirmsell" resultType="com.entity.UndoneOrder">
+        select * from car,car_order where car_order.status='未交易' and id=orderedid and phone=#{phone};
+    </select>
+    <select id="collection" resultType="com.entity.Collections">
+        select * from car_collect,car where collectid=#{userid} and id=#{userid}
+    </select>
+    <delete id="deleteundoneoreder">
+        delete from car_order where oid=#{oid}
+    </delete>
+    <delete id="deletecollection">
+        delete from car_collect where cid=#{cid}
+    </delete>
+    <delete id="deleteunchecksell">
+        delete from car where id=#{id}
+    </delete>
+    <delete id="deletecheckedsell">
+        delete from car where id=#{id}
+    </delete>
+    <update id="updateConfirm">
+        update car_order set status='已交易' where oid=#{oid}
+    </update>
+</mapper>

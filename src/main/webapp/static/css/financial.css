@@ -1,0 +1,456 @@
+/*主体宽度*/
+nav,section,.subject{
+	width:1200px;
+    margin:0 auto;
+}
+/*头部部分*/
+header{
+	
+}
+/* 导航栏 */
+nav{
+    height:64px;
+    background-color:rgba(0,0,0,0);
+}
+.nav-container{
+    height:65px;
+}
+/*logo图片*/
+nav .nav-left>span{
+	width:64px;
+	height:64px;
+	display:inline-block;
+}
+nav .nav-left>span>a>img{
+	width:64px;
+	height:64px;
+}
+nav .nav-left>a>img{
+	width:9px;
+	height:4px;
+	position:relative;
+	top:-2px;
+	left:-3px;	
+}
+nav .nav-left .city{
+	margin-top:30px;
+	display:block;
+	margin-left:40px;
+	font-size:13px;
+	color:#2c2c2c;
+}
+/* 导航栏右边内容 */
+.nav-right{
+	height:64px;
+}
+.nav-right li{
+	float:left;
+	margin:30px 27px;
+	font-size:14px;
+}
+.nav-right ul li:nth-child(5){
+	border-bottom:2px solid #22ac38;
+	padding-bottom:10px;
+}
+.nav-right ul li img{
+	width:14px;
+	height:14px;
+	position:relative;
+	top:1px;
+	left:3px;	
+}
+.nav-right li a{
+	color:#333333;
+}
+.nav-right li a:hover{
+	color:#22ac38;
+}
+.nav-right ul li:nth-child(7){
+	border-right:1px solid #8c898c;
+	padding-right:20px;
+	margin-left:3px;
+	margin-top:29px;
+}
+.nav-right ul li:last-child{
+	font-size:24px;
+	margin-left:0px;
+	font-weight:bold;
+	color:#22ac38;
+	line-height:18px;
+}
+header{
+	height:420px;
+	background:url(../img/banner.5355155850faa0c33e6316a71c94c6d9.png);
+	background-size:100%;
+}
+/*申请表单*/
+.apply{
+	width:315px;
+	height:325px;
+	background-color:#FFFFFF;
+	margin-left:480px;
+	margin-top:10px;
+}
+.apply p{
+	width:310px;
+	height:55px;
+    font-size: 16px;
+    line-height:55px;
+    color: #666666;
+    margin-left:20px;
+}
+.apply p i{
+	font-style:normal;
+	padding-left: 10px;
+    font-size: 12px;
+    color: #999
+}
+.apply .phone,.verification{
+	width:275px;
+	height:40px;
+	border:1px solid #dddddd;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+.phone input,.verification input{
+	height:35px;
+	border:none;
+	width:180px;
+	margin-left:10px;
+	margin-top:2px;
+	outline:none;
+	font-size: 14px;
+	color:#999;
+}
+.phone a{
+	display: inline-block;
+	float:right;
+	color: #999;
+	font-size: 14px;
+	line-height:40px;
+	margin-right:10px;
+}
+.apply button{
+	margin:0 auto;
+	width:275px;
+	height:40px;
+	background-color:#fc5050;
+	color:#fff;
+	border-radius: 5px;
+	font-size:18px;
+	cursor: pointer;
+	border:none;
+	margin-left:20px;
+	outline: none;
+}
+.apply button:hover{
+	background-color:#ff6e6e;
+}
+.apply ul{
+	width:250px;
+	height:50px;
+	margin:0 auto;
+	margin-top:-5px;
+}
+.apply ul li{
+	width:35px;
+	height:50px;
+	background-color: #4b4b4b;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    border-radius: 3px;
+    float:left;
+    margin-right:3px;
+    margin-left:3px;
+}
+/*主体内容*/
+section .intro{
+	width:1150px;
+	height:70px;
+	float:right;
+	margin-top:20px;
+}
+section .intro li{
+	width:180px;
+	height:40px;
+	float:left;
+	margin-right:100px;
+}
+section .intro li img{
+	float:left;
+	margin-top:5px;
+	margin-right:5px;
+}
+section .intro li h3{
+	float:left;
+	font-size: 18px;
+    color: #333;
+}
+section .intro li p{
+	float:left;
+	font-size: 14px;
+    color: #999;
+}
+/*分期购*/
+section .stages{
+	height:520px;
+	margin-top:80px;
+}
+section .stages h2,section .experience h2,.serve h2,.loans h2,.cooperation h2{
+	padding: 100px 0 10px;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 22px;
+    line-height: 22px;
+}
+section .stages .hotcar{
+	width:170px;
+	height:190px;
+	float:left;
+	margin-top:10px;
+	margin-left:20px;
+	cursor:pointer;
+}
+section .stages .hotcar h4{
+	padding-top: 20px;
+    padding-left: 5px;
+    color: #e54121;
+    font-size: 18px;
+    height: 24px;
+    line-height: 18px;
+}
+section .stages .hotcar p{
+	padding-left: 5px;
+    color: #666;
+    font-size: 14px;
+    height: 30px;
+    line-height: 18px;
+}
+/*客户体验*/
+section .experience{
+	height:455px;
+	margin-top:-25px;
+}
+section .experience .story{
+	height:370px;
+	width:300px;
+	margin-left:75px;
+}
+section .experience .story img{
+	margin-left:30px;
+	margin-top:20px;
+}
+section .experience .story p{
+	padding-top: 20px;
+    width: 270px;
+    height: 27px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e7e7e7;
+}
+section .experience .story i{
+	font-size: 12px;
+    color: #999;
+    font-style:normal;
+}
+section .experience .story b{
+	padding-left: 5px;
+    font-size: 16px;
+    color: #e54121;
+    font-weight:normal;
+}
+/*首付*/
+section .experience .story .priceTage{
+	font-size: 12px;
+    padding: 0 2px;
+    height: 14px;
+    line-height: 14px;
+    color: #999;
+    margin-right: 5px;
+    border: 1px solid #999;
+    margin-left:15px;
+    position: relative;
+	top:5px;
+}
+section .experience .story .price{
+	font-size: 14px;
+	position: relative;
+	top:5px;
+}
+section .experience .story .speak{
+	color: #999;
+	font-size: 14px;
+}
+/*服务范围*/
+section .serve{
+	height:660px;
+}
+.serve p{
+	display:inline-block;
+	margin-left:30px;
+	font-size: 16px;
+    color: #666;
+}
+.serve p b{
+	font-weight:normal;
+	color:#e54121;
+}
+section .serve img{
+	margin-left:190px;
+}
+/*贷款流程*/
+section .loans{
+	height:270px;
+}
+section .loans .loans-cont{
+	width:240px;
+	height:160px;
+	margin-left:45px;
+	text-align: center;
+	margin-top:20px;
+}
+section .loans .loans-cont img{
+	margin-left:30px;
+}
+section .loans .loans-cont h3{
+    font-size: 20px;
+    position: relative;
+    top:-5px;
+}
+section .loans .loans-cont p{
+	font-size: 16px;
+    color: #999;
+}
+/*合作机构*/
+section .cooperation{
+	height:520px;
+}
+section .cooperation img{
+	margin-top:30px;
+}
+section .cooperation button{
+	width: 190px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    background-color: #e54121;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    cursor: pointer;
+    margin-left:500px;
+    margin-top:50px;
+}
+/*底部部分*/
+.subject{
+	height:465px;
+}
+.subject .top{
+	height:200px;
+}
+.subject .top .left{
+	width:800px;
+	height:200px;
+}
+.subject .top .left .logo{
+	width:100px;
+	height:90px;
+	margin-top:50px;
+	margin-left:40px;
+}
+.subject .top .left .phone{
+	margin-top:50px;
+	margin-left:20px;
+}
+.subject .top .left p{
+	color:#b8b8b8;
+	font-size:14px;
+	line-height:20px;	
+}
+.subject .top .right{
+	width:390px;
+	height:200px;
+}
+.subject .top .left .lf img{
+	width:85px;
+	height:85px;
+	margin-top:50px;
+}
+.subject .top .right ul li{
+	float:left;
+	margin-left:8px;
+	margin-top:50px;
+	margin-bottom:15px;
+}
+.subject .top .right ul li:first-child{
+	margin-left:0px;
+}
+.subject .top .right ul li a{
+	color:#b8b8b8;
+	font-size:14px;
+}
+.subject .top .right ul li a:hover{
+	text-decoration:underline;
+}
+.subject .top .right p{
+	color:#b8b8b8;
+	font-size:12px;
+	line-height:20px;
+}
+.subject .top .right p a{
+	color:#939393;
+}
+.subject .top .right p img{
+	position:relative;
+	top:5px;
+}
+.subject .bottom{
+	height:240px;
+}
+.subject .bottom ul{
+	margin-bottom:10px;
+}
+.subject .bottom h4{
+	float:left;
+	color:#666666;
+	font-size:15px;
+	font-weight:normal;
+}
+.subject .bottom li{
+	float:left;
+	margin-left:20px;
+}
+.subject .bottom li a{
+	color:#666666;
+	font-size:12px;
+}
+.subject .bottom li a:hover{
+	text-decoration:underline;
+}
+.subject .bottom p{
+	color:#666666;
+	font-size:12px;
+	text-align: center;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+/*微信二维码*/
+.codeWeixin{
+	width: 50px;
+    height: 50px;
+    background: #03c582;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position:fixed;
+    top:50%;
+    left:85%;
+}
+.codeWeixin img{
+	width: 50px;
+    height: 50px;
+}

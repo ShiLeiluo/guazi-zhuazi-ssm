@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.LoginMapper">
+    <insert id="addUser" parameterType="com.entity.User">
+    insert into user(phonenumber,registertime) value(#{phonenumber},#{registertime})
+    </insert>
+    <select id="getUserid" resultType="com.entity.User">
+        select * from user where phonenumber=#{username}
+    </select>
+    <select id="getUser" resultType="com.entity.User">
+        select * from user where phonenumber=#{username}
+    </select>
+    <select id="getAdmin" resultType="com.entity.Admin">
+        select * from admin where username=#{usernsme}
+    </select>
+</mapper>
