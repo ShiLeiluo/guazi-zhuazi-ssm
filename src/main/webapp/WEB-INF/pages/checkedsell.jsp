@@ -423,6 +423,9 @@
             }
         });
     }
+    function logout() {
+        window.location.href="/logout";
+    }
 </script>
 <!-- END Scripts-->
 </body>

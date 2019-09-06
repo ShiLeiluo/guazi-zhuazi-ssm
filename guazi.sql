@@ -11,7 +11,7 @@
  Target Server Version : 50721
  File Encoding         : 65001
 
- Date: 05/09/2019 10:11:44
+ Date: 06/09/2019 16:21:29
 */
 
 SET NAMES utf8mb4;
@@ -22,14 +22,15 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin`  (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  PRIMARY KEY (`username`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-INSERT INTO `admin` VALUES ('15797874652');
+INSERT INTO `admin` VALUES (1, '15797874652');
 
 -- ----------------------------
 -- Table structure for car
@@ -78,7 +79,6 @@ INSERT INTO `car` VALUES (20, 'file/6.jpg', '大众速腾 2009款 1.6L 自动时
 INSERT INTO `car` VALUES (21, 'file/4.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (22, 'file/3.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (23, 'file/4.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
-INSERT INTO `car` VALUES (24, 'file/3.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (25, 'file/29makeFriend.jpg', '1', '1', '1', '1', '深圳', '15797874652', 1, '1', '70%', '1', '未核实');
 INSERT INTO `car` VALUES (26, 'file/29makeFriend.jpg', '1', '1', '1', '1', '深圳', '15797874652', 1, '1', '55%', '1', '未核实');
 INSERT INTO `car` VALUES (27, 'file/29makeFriend.jpg', '2', '2', '2', '2', '深圳', '15797874652', 2, '2', '75%', '2', '未核实');
@@ -302,7 +302,7 @@ CREATE TABLE `car_order`  (
 -- Records of car_order
 -- ----------------------------
 INSERT INTO `car_order` VALUES (2, 1, 19, '未交易');
-INSERT INTO `car_order` VALUES (6, 1, 7, '未交易');
+INSERT INTO `car_order` VALUES (6, 1, 7, '已交易');
 INSERT INTO `car_order` VALUES (10, 1, 4, '未交易');
 INSERT INTO `car_order` VALUES (11, 1, 22, '已交易');
 

@@ -13,7 +13,7 @@
         select * from car_order,car where orderid=#{userid} and id=#{userid} and car_order.status='已交易'
     </select>
     <select id="confirmsell" resultType="com.entity.UndoneOrder">
-        select * from car,car_order where car_order.status='未交易' and id=orderedid and phone=#{phone};
+        select oid,orderedid,name,nowprice,phone,cityname,car_order.status from car,car_order where car_order.status='未交易' and id=orderedid and phone=#{phone};
     </select>
     <select id="collection" resultType="com.entity.Collections">
         select * from car_collect,car where collectid=#{userid} and id=#{userid}

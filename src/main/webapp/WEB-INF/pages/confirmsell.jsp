@@ -184,9 +184,9 @@
     <section id="undoneorder">
         <!-- START Page content-->
         <section class="main-content">
-            <h3>未完成订单
+            <h3>已售出车辆信息
                 <br>
-                <small>可查阅尚未完成的订单信息</small>
+                <small>可确认已售出车辆</small>
             </h3>
             <!-- START panel-->
             <div class="panel panel-default">
@@ -310,6 +310,9 @@
                 window.location.reload();
             }
         });
+    }
+    function logout() {
+        window.location.href="/logout";
     }
 </script>
 <!-- END Scripts-->

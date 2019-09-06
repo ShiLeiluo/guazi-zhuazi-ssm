@@ -6,7 +6,16 @@ package com.entity;
  * guazi/com.entity/Admin
  */
 public class Admin {
+    private  int id;
     private String username;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -19,7 +28,8 @@ public class Admin {
     @Override
     public String toString() {
         return "Admin{" +
-                "username='" + username + '\'' +
+                "id=" + id +
+                ", username='" + username + '\'' +
                 '}';
     }
 }

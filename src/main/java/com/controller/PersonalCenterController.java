@@ -109,7 +109,7 @@ public class PersonalCenterController {
     public int cancelorder(Integer oid){
 
         System.out.println("cancelorder++oid="+oid);
-        if (personalCenterService.deleteundoneoreder(oid)>0){
+        if (personalCenterService.deleteundoneoreder(oid)<1){
             return 1;
         }
         return 0;
@@ -119,7 +119,7 @@ public class PersonalCenterController {
     public int cancelcollect(Integer cid){
 
         System.out.println("cancelcollect++cid="+cid);
-        if (personalCenterService.deletecollection(cid)>0){
+        if (personalCenterService.deletecollection(cid)<1){
             return 1;
         }
         return 0;
@@ -128,7 +128,7 @@ public class PersonalCenterController {
     @ResponseBody
     public int deleteunchecksell(Integer id){
         System.out.println("deleteunchecksell++id="+id);
-        if (personalCenterService.deleteunchecksell(id)>0){
+        if (personalCenterService.deleteunchecksell(id)<1){
             return 1;
         }
         return 0;
@@ -137,7 +137,7 @@ public class PersonalCenterController {
     @ResponseBody
     public int deletecheckedsell(Integer id){
         System.out.println("deletecheckedsell++id="+id);
-        if (personalCenterService.deletecheckedsell(id)>0){
+        if (personalCenterService.deletecheckedsell(id)<1){
             return 1;
         }
         return 0;
@@ -145,7 +145,7 @@ public class PersonalCenterController {
     @RequestMapping("/confirmstatus")
     @ResponseBody
     public int confirmstatus(int oid){
-        if (personalCenterService.updateConfirm(oid)>0){
+        if (personalCenterService.updateConfirm(oid)<1){
             return 1;
         }
         return 0;
