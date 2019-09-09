@@ -626,8 +626,13 @@
     }
     //	重新调整对话框的位置和遮罩，并且展现
     function showDialog() {
-        g('dialogMove').style.display = 'block';
-        autoCenter(g('dialogMove'));
+        var username="${username}";
+        if (username==""){
+            alert("请先登录");
+        }else {
+            g('dialogMove').style.display = 'block';
+            autoCenter(g('dialogMove'));
+        }
     }
     //	关闭对话框
     function hideDialog() {

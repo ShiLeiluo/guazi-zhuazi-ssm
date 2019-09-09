@@ -1,8 +1,9 @@
 package com.controller;
 
+import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.entity.User;
-import com.mapper.LoginMapper;
 import com.service.LoginService;
+import com.util.AliyunSmsUtils;
 import com.util.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -76,11 +77,15 @@ public class LoginController {
     }
     @RequestMapping("/login")
     @ResponseBody
-    public String adminLogin(@RequestParam(value = "password", defaultValue = "") String password,@RequestParam(value = "username", defaultValue = "") String username, HttpServletRequest request){
+    public Msg adminLogin(@RequestParam(value = "password", defaultValue = "") String password,@RequestParam(value = "username", defaultValue = "") String username, HttpServletRequest request){
         password = request.getParameter("password");
         username = request.getParameter("username");
         System.out.println(username);
         System.out.println(password);
+        if (loginService.getUser(username).getStatus()==1){
+            return Msg.blacklist();
+        }
+
         String code=(String) request.getSession().getAttribute("vCode");
         System.out.println("vCode="+code);
         if (password.equals(code)){
@@ -108,9 +113,9 @@ public class LoginController {
 
             }
 
-            return String.valueOf(Msg.success().getCode());
+            return Msg.success();
         }else {
-            return String.valueOf(Msg.fail().getCode());
+            return Msg.fail();
         }
     }
     @RequestMapping("/logout")

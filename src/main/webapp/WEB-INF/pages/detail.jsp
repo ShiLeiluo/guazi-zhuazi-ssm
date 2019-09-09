@@ -2046,6 +2046,7 @@
 
     function collect() {
         $("#collect").click(function () {
+            var username="${username}";
             var collectid="${userid}";
             var collectedid="${detail.id}";
             if (username!=""){
@@ -2072,6 +2073,7 @@
     }
     function order() {
         $("#order").click(function () {
+            var username="${username}";
             var orderid="${userid}";
             var orderedid="${detail.id}";
             if (username!=""){

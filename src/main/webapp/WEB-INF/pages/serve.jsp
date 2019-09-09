@@ -21,7 +21,7 @@
     <nav>
         <div class="nav-container">
             <div class="nav-left lf">
-                <span class="lf"><a href="/"><img src="static/img/logo1_03.png" alt=""></a></span>
+                <span class="lf"><a href="/"><img src="static/img/logosl.png" alt=""></a></span>
                 <a href="" class="city lf">北京&nbsp;<img src="static/img/jiantou-down.png" alt=""></a>
             </div>
             <div class="nav-right rt">

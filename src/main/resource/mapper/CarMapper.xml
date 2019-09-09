@@ -41,7 +41,7 @@
         select *  from car_internal_info where id=#{id}
     </select>
     <insert id="addCar" parameterType="com.entity.Car">
-        insert into car(name,cartime,nowprice,orprice,cityname,phone,age,mile,demage,cspeed) values(#{name},#{cartime},#{nowprice},#{orprice},#{cityname},#{phone},#{age},#{mile},#{demage},#{cspeed})
+        insert into car(name,cartime,nowprice,orprice,cityname,phone,age,mile,demage,cspeed,status) values(#{name},#{cartime},#{nowprice},#{orprice},#{cityname},#{phone},#{age},#{mile},#{demage},#{cspeed},'已核实')
     </insert>
     <select id="getId" resultType="com.entity.Car">
         SELECT * FROM car ORDER BY id DESC LIMIT 1

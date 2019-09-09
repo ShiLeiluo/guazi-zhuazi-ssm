@@ -109,7 +109,7 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-8">
             <button class="btn btn-primary" id="user_add_modal_btn">新增</button>
-            <button class="btn btn-danger"  id="user_delete_all_btn">批量删除</button>
+            <button class="btn btn-danger"  id="user_delete_all_btn">批量加入黑名单</button>
         </div>
     </div>
     <!-- 显示表格数据 -->
@@ -199,7 +199,7 @@
             //为编辑按钮添加一个自定义的属性，来表示当前员工id
             editBtn.attr("edit-id",user.id);
             var delBtn =  $("<button></button>").addClass("btn btn-danger btn-sm delete_btn")
-                .append($("<span></span>").addClass("glyphicon glyphicon-trash")).append("删除");
+                .append($("<span></span>").addClass("glyphicon glyphicon-trash")).append("加入黑名单");
             //为删除按钮添加一个自定义的属性来表示当前删除的员工id
             delBtn.attr("del-id",user.id);
             var btnTd = $("<td></td>").append(editBtn).append(" ").append(delBtn);
@@ -328,7 +328,7 @@
         var userName = $(this).parents("tr").find("td:eq(2)").text();
         var userId = $(this).attr("del-id");
 
-        if(confirm("确认删除【"+userName+"】吗？")){
+        if(confirm("确认将【"+userName+"】加入黑名单吗？")){
             //确认，发送ajax请求删除即可
             $.ajax({
                 url:"${APP_PATH}/delete",
@@ -413,7 +413,7 @@
         //去除删除的id多余的-
         del_idstr = del_idstr.substring(0, del_idstr.length-1);
         //console.log("传递后台的ids:"+del_idstr);
-        if(confirm("确认删除【"+userNames+"】吗？")){
+        if(confirm("确认将【"+userNames+"】加入黑名单吗？")){
             //发送ajax请求删除
             $.ajax({
                 url:"${APP_PATH}/batchDelete?ids="+del_idstr,

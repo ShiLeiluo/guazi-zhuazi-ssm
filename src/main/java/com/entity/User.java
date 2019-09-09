@@ -16,6 +16,7 @@ public class User {
     private String phonenumber;
     private String email;
     private String registertime;
+    private int status;
 
     public User(){}
     public User(Integer id, String username, String phonenumber) {
@@ -88,6 +89,14 @@ public class User {
         this.registertime = registertime;
     }
 
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -99,6 +108,7 @@ public class User {
                 ", phonenumber='" + phonenumber + '\'' +
                 ", email='" + email + '\'' +
                 ", registertime='" + registertime + '\'' +
+                ", status=" + status +
                 '}';
     }
 }

@@ -1,4 +1,4 @@
-﻿package com.util;
+package com.util;
 
 /**
  * @author SL
@@ -38,9 +38,9 @@ public class AliyunSmsUtils {
 
     // TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
 
-    static final String accessKeyId = "***********";  // TODO 修改成自己的
+    static final String accessKeyId = "LTAISgedbQL1ZVy9";  // TODO 修改成自己的
 
-    static final String accessKeySecret = "*************";   // TODO 修改成自己的
+    static final String accessKeySecret = "vxMe5x2VIQMTrMPVwcT2IFsGhIg3zU";   // TODO 修改成自己的
 
 
 

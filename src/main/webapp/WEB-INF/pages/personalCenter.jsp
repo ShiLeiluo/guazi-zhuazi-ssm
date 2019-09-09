@@ -53,7 +53,7 @@
     <!-- START Top Navbar-->
     <nav role="navigation" class="navbar navbar-default navbar-top navbar-fixed-top">
         <!-- START navbar header-->
-        <div class="navbar-header" style="background-color: #22AB38;width: 250px;">
+        <div class="navbar-header" style="background-color: #22AB38;">
             <a href="/" class="navbar-brand">
                 <div class="brand-logo">爪子二手车</div>
             </a></div>

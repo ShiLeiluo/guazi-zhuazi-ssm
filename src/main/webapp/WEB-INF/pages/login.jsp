@@ -74,6 +74,9 @@
         .error-msg{
             color: #e40;
         }
+        .error-username{
+            color: #e40;
+        }
         /* 弹出层遮罩 */
         .layer-mask{
             display: none;      /* 遮罩默认开始是不显示的 */
@@ -196,7 +199,8 @@
         <h3 class="title" style="margin-top: 40px">爪子二手车直卖网</h3>
         <div class="item" style="margin-top: 40px;margin-left: -60px;">
             <label>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号&emsp;</label>
-            <input type="text" id="username" class="username" name="username" placeholder="手机号码">
+            <input type="text" id="username" class="username" name="username" onblur="checkusername()" placeholder="手机号码">
+            <p class="error-username"></p>
         </div>
         <div class="item" style="margin-left: -60px;">
             <label>验&nbsp;&nbsp;&nbsp;证&nbsp;&nbsp;&nbsp;码</label>
@@ -321,9 +325,11 @@
                         success:function(result){
                             console.log(result);
                             //1、解析并显示员工数据
-                            if (result!=100){
+                            if (result.code==200){
                                 $(".error-msg").html("验证码错误");
-                            }else {
+                            }else if (result.code==300){
+                                alert(result.msg);
+                            } else {
                                 window.location.reload();
                             }
                         }
@@ -333,7 +339,20 @@
             });
         })
     });
-
+    function checkusername() {
+        var username = $("#username").val();
+        if(!(/^1[34578]\d{9}$/.test(username))){
+            $(".error-username").html("手机号码有误，请重填");
+            $("#password").attr("disabled",true);
+            $("#vCode").attr("disabled",true);
+            $("#logSubmitBtn").attr("disabled",true);
+        }else {
+            $(".error-username").html("");
+            $("#password").attr("disabled",false);
+            $("#vCode").attr("disabled",false);
+            $("#logSubmitBtn").attr("disabled",false);
+        }
+    }
 </script>
 
 </body>
