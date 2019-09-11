@@ -11,7 +11,7 @@
  Target Server Version : 50721
  File Encoding         : 65001
 
- Date: 10/09/2019 14:18:06
+ Date: 11/09/2019 16:30:15
 */
 
 SET NAMES utf8mb4;
@@ -51,7 +51,7 @@ CREATE TABLE `car`  (
   `cspeed` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '',
   `status` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 39 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of car
@@ -59,15 +59,12 @@ CREATE TABLE `car`  (
 INSERT INTO `car` VALUES (1, 'file/qn18051718435418808dac917b57b05074d1973d1fc46b.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (2, 'file/qn18051718435418808dac917b57b05074d1973d1fc46b.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (3, 'file/4.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
-INSERT INTO `car` VALUES (4, 'file/5.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
-INSERT INTO `car` VALUES (5, 'file/6.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (6, 'file/7.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (7, 'file/8.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (8, 'file/9.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (9, 'file/6.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (10, 'file/3.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (11, 'file/4.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
-INSERT INTO `car` VALUES (12, 'file/5.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (13, 'file/6.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (14, 'file/7.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (15, 'file/8.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
@@ -80,11 +77,14 @@ INSERT INTO `car` VALUES (21, 'file/4.jpg', '大众速腾 2009款 1.6L 自动时
 INSERT INTO `car` VALUES (22, 'file/3.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '南昌', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (23, 'file/4.jpg', '大众速腾 2009款 1.6L 自动时...', '2009年 丨 5.9万公里', '9.90', '12.7', '深圳', '15797874652', 3, '3', '10%', '3', '已核实');
 INSERT INTO `car` VALUES (25, 'file/29makeFriend.jpg', '1', '1', '1', '1', '深圳', '15797874652', 1, '1', '70%', '1', '未核实');
-INSERT INTO `car` VALUES (26, 'file/29makeFriend.jpg', '1', '1', '1', '1', '深圳', '15797874652', 1, '1', '55%', '1', '未核实');
-INSERT INTO `car` VALUES (27, 'file/29makeFriend.jpg', '2', '2', '2', '2', '深圳', '15797874652', 2, '2', '75%', '2', '未核实');
-INSERT INTO `car` VALUES (28, 'file/29makeFriend.jpg', '1', '1', '1', '1', '深圳', '15797874652', 1, '1', '60%', '1', '未核实');
 INSERT INTO `car` VALUES (30, 'file/30makeFriend3.jpg', '4', '4', '4', '4', '深圳', '15797874652', 2, '3', '65%', '3', NULL);
 INSERT INTO `car` VALUES (31, 'file/31makeFriend2.jpg', '7', '7', '7', '7', '深圳', '15797874652', 1, '2', '50%', '3', '已核实');
+INSERT INTO `car` VALUES (33, 'file/33Sprinkle.jpg', '0', '0', '0', '0', '深圳', '15797874652', 0, '0', '60%', '0', '已核实');
+INSERT INTO `car` VALUES (34, 'file/34px3.jpg', '9', '9', '9', '9', '深圳', '15797874652', 22, '9', '100%', '9', '已核实');
+INSERT INTO `car` VALUES (35, 'file/35px3.jpg', '9', '9', '9', '9', '深圳', '15797874652', 22, '9', '100%', '9', '已核实');
+INSERT INTO `car` VALUES (36, 'file/36px4.jpg', '8', '8', '8', '8', '深圳', '15797874652', 8, '8', '95%', '8', '已核实');
+INSERT INTO `car` VALUES (37, 'file/37p7.jpg', '7', '7', '7', '7', '深圳', '15797874652', 22, '3', '20%', '3', '已核实');
+INSERT INTO `car` VALUES (38, 'file/38csgo.jpg', '6', '6', '6', '6', '深圳', '15797874652', 6, '6', '20%', '6', '已核实');
 
 -- ----------------------------
 -- Table structure for car_chassis_brake_info
@@ -141,7 +141,7 @@ CREATE TABLE `car_collect`  (
   `collectid` int(50) DEFAULT NULL,
   `collectedid` int(50) DEFAULT NULL,
   PRIMARY KEY (`cid`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of car_collect
@@ -151,7 +151,7 @@ INSERT INTO `car_collect` VALUES (9, 1, 4);
 INSERT INTO `car_collect` VALUES (11, 1, 6);
 INSERT INTO `car_collect` VALUES (12, 1, 11);
 INSERT INTO `car_collect` VALUES (13, 1, 18);
-INSERT INTO `car_collect` VALUES (14, 1, 8);
+INSERT INTO `car_collect` VALUES (16, 1, 8);
 
 -- ----------------------------
 -- Table structure for car_engine_info
@@ -300,17 +300,14 @@ CREATE TABLE `car_order`  (
   `orderedid` int(11) DEFAULT NULL,
   `status` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`oid`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of car_order
 -- ----------------------------
 INSERT INTO `car_order` VALUES (2, 1, 19, '已交易');
 INSERT INTO `car_order` VALUES (6, 1, 7, '已交易');
-INSERT INTO `car_order` VALUES (12, 1, 6, '未交易');
-INSERT INTO `car_order` VALUES (13, 1, 11, '未交易');
-INSERT INTO `car_order` VALUES (14, 1, 18, '未交易');
-INSERT INTO `car_order` VALUES (15, 1, 8, '未交易');
+INSERT INTO `car_order` VALUES (18, 1, 8, '已交易');
 
 -- ----------------------------
 -- Table structure for car_safety_info
@@ -433,12 +430,12 @@ CREATE TABLE `user`  (
   `registertime` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `status` int(1) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, '瓜甜吗', '瓜真甜', '男', 21, '15797874652', '11111111111@qq.com', '2019-08-28 20:10:47', 0);
+INSERT INTO `user` VALUES (1, '瓜甜吗', '瓜真甜', '男', 22, '15797874652', '11111111111@qq.com', '2019-08-28 20:10:47', 0);
 INSERT INTO `user` VALUES (2, '卖瓜', '瓜保甜', '男', 22, '15797863227', '22222222222@qq.com', '2019-08-28 20:10:47', 0);
 
 SET FOREIGN_KEY_CHECKS = 1;
